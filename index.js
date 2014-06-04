@@ -1,24 +1,5 @@
-// EXERCISE 2
+'use strict'
 
-var sum = 0
-var itemCount = process.argv.length;
+var my_module = require('./my_module.js');
 
-for (var i = 2; i < itemCount; i++) {
-	sum += Number(process.argv[i]);
-};
-
-console.log(sum);
-
-
-// EXERCISE 3
-
-var fs = require('fs');
-
-var file = process.argv[2];
-
-var lines = fs.readFileSync(file, 'utf8').split("\n").length - 1;
-
-console.log(lines);
-
-
-// EXERCISE 4
+// module.exports = require('my_module');
